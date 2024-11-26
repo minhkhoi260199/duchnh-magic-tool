@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feature 1</title>
+    <!-- Link to Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="p-5">
+      <div class="container">
+        <h1>Replace ? when checking log with Mybatis</h1>
+        <p>
+          The MyBatis Query Parameter Replacer is a handy tool designed to
+          streamline the development process by automatically replacing
+          placeholder "?" symbols in MyBatis SQL queries with their actual
+          values. This script is particularly useful for developers working with
+          MyBatis, an essential Java framework for SQL mapping.
+        </p>
+        <div class="container mt-5">
+          <h1 class="text-center">SQL Executor</h1>
+
+          <div class="row">
+            <!-- SQL Input -->
+            <div class="col-md-4">
+              <label for="sqlInput" class="form-label">SQL Input</label>
+              <textarea
+                class="form-control"
+                id="sqlInput"
+                rows="6"
+                placeholder="Enter your SQL query here"
+              ></textarea>
+            </div>
+
+            <!-- Value Input -->
+            <div class="col-md-4">
+              <label for="valueInput" class="form-label">Value Input</label>
+              <textarea
+                class="form-control"
+                id="valueInput"
+                rows="6"
+                placeholder="Enter value here"
+              ></textarea>
+            </div>
+
+            <!-- Output -->
+            <div class="col-md-4">
+              <label for="output" class="form-label">Output</label>
+              <textarea
+                class="form-control"
+                id="output"
+                rows="6"
+                readonly
+                placeholder="Output will be displayed here"
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Button to Execute SQL -->
+          <div class="text-center mt-3">
+            <button class="btn btn-primary" id="executeBtn">Execute</button>
+          </div>
+        </div>
+
+        <script src="./script.js"></script>
+        <div class="text-center mt-3">
+          <a href="../index.html" class="btn btn-primary">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
